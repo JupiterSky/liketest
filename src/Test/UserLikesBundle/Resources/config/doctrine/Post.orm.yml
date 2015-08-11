@@ -1,0 +1,29 @@
+Test\UserLikesBundle\Entity\Post:
+    repositoryClass:  Test\UserLikesBundle\Repository\PostRepositoryDoctrine
+    type: entity
+    table: post
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '120'
+
+        content:
+            type: string
+            length: '320'
+
+    manyToMany:
+        userLikes:
+            targetEntity: User
+            mappedBy: postLikes
+
+
+
+
+
+

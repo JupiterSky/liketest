@@ -1,0 +1,28 @@
+default:
+  suites:
+    test_like_bundle:
+              type: symfony_bundle
+              bundle: 'UserLikesBundle'
+              contexts:
+
+                   - Behat\MinkExtension\Context\MinkContext
+                   - Test\UserLikesBundle\Features\Context\Helpers\DatabaseContext:
+                      doctrine: '@doctrine'
+                   - Sanpi\Behatch\Context\JsonContext:
+                      evaluationMode: javascript
+                   - Test\UserLikesBundle\Features\Context\FeatureContext:
+                      doctrine: '@doctrine'
+                      serviceContainer: '@service_container'
+
+
+
+  extensions:
+      Behat\Symfony2Extension:
+        kernel:
+          env: test
+          debug: true
+      Behat\MinkExtension:
+        sessions:
+          default:
+            symfony2: ~
+      Sanpi\Behatch\Extension: ~

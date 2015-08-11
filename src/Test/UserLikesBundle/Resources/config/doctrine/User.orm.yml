@@ -1,0 +1,35 @@
+Test\UserLikesBundle\Entity\User:
+    repositoryClass:  Test\UserLikesBundle\Repository\UserRepositoryDoctrine
+    type: entity
+    table: user
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '120'
+
+    manyToMany:
+        postLikes:
+            targetEntity: Post
+            cascade: ["persist", "remove"]
+            joinTable:
+               name: postlikes
+               joinColumns:
+                   user_id:
+                      referencedColumnName: id
+               inverseJoinColumns:
+                   post_id:
+                      referencedColumnName: id
+
+
+
+
+
+
+
+

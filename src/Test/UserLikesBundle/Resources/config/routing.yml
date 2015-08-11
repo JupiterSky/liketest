@@ -1,0 +1,11 @@
+
+
+user:
+    type:         rest
+    resource:     "@UserLikesBundle/Controller/UserController.php"
+    defaults: { _format: json}
+
+post:
+    type:         rest
+    resource:     "@UserLikesBundle/Controller/PostController.php"
+    defaults: { _format: json}

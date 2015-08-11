@@ -1,0 +1,15 @@
+Test\UserLikesBundle\Entity\User:
+          exclusion_policy: All
+          properties:
+                  name:
+                      type: string
+                      expose: true
+                  state:
+                      type: boolean
+                      expose: true
+                  id:
+                      type: integer
+                      expose: true
+
+                  postLikes:
+                      expose: true

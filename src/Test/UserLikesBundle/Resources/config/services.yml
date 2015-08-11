@@ -1,0 +1,29 @@
+
+parameters:
+ entity.user.class: Test\UserLikesBundle\Entity\User
+ entity.post.class: Test\UserLikesBundle\Entity\Post
+
+
+services:
+
+    test.user.repository:
+        class: Doctrine\ORM\EntityRepository
+        factory_service: doctrine.orm.entity_manager
+        factory_method: getRepository
+        arguments:
+               - %entity.user.class%
+
+
+    post.repository:
+        class: Doctrine\ORM\EntityRepository
+        factory_service: doctrine.orm.entity_manager
+        factory_method: getRepository
+        arguments:
+               - %entity.post.class%
+
+
+
+
+
+
+
