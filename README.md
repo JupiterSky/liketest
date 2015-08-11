@@ -5,10 +5,23 @@ Preconditions:
 
 * Apache, Mysql , PhP installed [on ubuntu](https://www.digitalocean.com/community/tutorials/como-instalar-a-pilha-linux-apache-mysql-php-lamp-no-ubuntu-14-04-pt)
 
+* INSTALL GIT 
+
+## Download Project TEST LIKES
+
+Have 2 options 
+* Download from button with text `Download Zip`
+
+* Clone the project with git and user the `VCS`
+    * Install:
+        * `git clone https://github.com/JupiterSky/liketest.git testApp`
+        * `cd testApp`
+
 
 
 ## Running
 ---
+
 
 #### 1) Composer
 
