@@ -38,16 +38,18 @@ Have 2 options
 
 In the directory app/config/ have a file that i prepare for you just rename to parameters.yml and change to your configuration
  
- 
- 
-#### 4) add permitions to cache folder and logs
 
-` sudo chmod 777 -R app/cache   `
-` sudo chmod 777 -R app/logs   `
 
-#### 5) Install dependencies of test Project
+#### 4) Install dependencies of test Project
    
 `sudo php composer.phar install `
+  
+#### 5) add permitions to cache folder and logs
+
+` sudo chmod 777 -R app/cache   `.
+
+` sudo chmod 777 -R app/logs   `
+  
   
   
 #### 6) Run server
