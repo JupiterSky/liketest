@@ -1,8 +1,8 @@
 {
-    "name": "gimler/symfony-rest-edition",
+    "name": "Test Likes",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony REST Edition\" distribution",
+    "description": "Test Like PLAYGROUND",
     "autoload": {
         "psr-0": {
             "": "src/"

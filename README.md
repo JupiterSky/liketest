@@ -96,9 +96,9 @@ search in google about "bdd" and "BEHAT"  :P
 
 Tips:
 
-* The actual test to like function its saying everyting;
+* The actual test to like function its saying everything;
 * Sometimes you just need clear the cache folder    
-* `app/console ` and the commands of symfony ;
+* `app/console ` and the commands of symfony2 ;
 
 
  
