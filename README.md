@@ -50,8 +50,14 @@ Have 2 options
 [http://symfony.com/doc/current/components/config/definition.html](look in symfony docs how to change)
 
 
-#### 6) Load Samples to DB user and POST
- 
+
+
+#### 6) Create a Schema and Load Samples to DB user and POST
+
+
+ `php app/console doctrine:schema:create`   
+
+ `php app/console doctrine:fixtures:load`
  
 #### 7) RUN TEST in BEHAT ()
 
@@ -78,7 +84,17 @@ search in google about "bdd" and "BEHAT"  :P
 # Challenge 
 ------
 
-### Make unlike behavior to the user by a API use the like function to guide :P
+### Make unlike behavior with API
+
+### Make whatever you want :)
+
+Tips:
+
+* The actual test to like function its saying everyting;
+* Sometimes you just need clear the cache folder    
+* `app/console ` and the commands of symfony ;
+
+
  
  
  
