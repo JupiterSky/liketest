@@ -27,39 +27,43 @@ Have 2 options
 
 `sudo curl -sS https://getcomposer.org/installer | php`
 
+
+
+#### 2) create a database in mysql if you chose pdo_mysql mine its testLikes , 
+[http://symfony.com/doc/current/components/config/definition.html](look in symfony docs how to change)
+
+
+
+#### 3) Configure the parameters.yml
+
+In the directory app/config/ have a file that i prepare for you just rename to parameters.yml and change to your configuration
  
-#### 2) Install dependencies of test Project
-   
-`sudo php composer.phar install `
-  
-  
-#### 3) Run server
-  
-`sudo app/console server:run`  
-
-
-
+ 
+ 
 #### 4) add permitions to cache folder and logs
 
 ` sudo chmod 777 -R app/cache   `
 ` sudo chmod 777 -R app/logs   `
 
+#### 5) Install dependencies of test Project
+   
+`sudo php composer.phar install `
+  
+  
+#### 6) Run server
+  
+`sudo app/console server:run`  
 
 
-#### 5) create a database in mysql if you chose pdo_mysql mine its testLikes , 
-[http://symfony.com/doc/current/components/config/definition.html](look in symfony docs how to change)
 
-
-
-
-#### 6) Create a Schema and Load Samples to DB user and POST
+#### 7) Create a Schema and Load Samples to DB user and POST
 
 
  `php app/console doctrine:schema:create`   
 
  `php app/console doctrine:fixtures:load`
  
-#### 7) RUN TEST in BEHAT ()
+#### 8) RUN TEST in BEHAT ()
 
 `bin/behat`
 
